@@ -1,2 +1,2 @@
-def print():
+def exec():
     print("ㅇㅅㅇ!")
