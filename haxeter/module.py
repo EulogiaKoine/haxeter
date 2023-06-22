@@ -210,7 +210,7 @@ class Interface:
     
     @classmethod
     def route(self):
-        return input(self.tag)
+        return input('' if self.tag == None else self.tag)
     
     @classmethod
     def present(self, msg):
