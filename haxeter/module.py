@@ -143,7 +143,7 @@ class Hunt:
                 player.spd += up['spd']
                 result.append(f'''
  ★ 레벨업! ★
-{player.lv-lvup} Lv → {player.lv} Lv
+{player.lv-lvup+1} Lv → {player.lv} Lv
 체력이 {up['hp']} 상승!
 공격력이 {up['atk']} 상승!
 방어력이 {up['defen']} 상승!
