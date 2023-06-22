@@ -118,7 +118,7 @@ class Hunt:
             mdef = Hunt.mdef(mlv)
             if Hunt.turn(mlv, player.spd) == "player":
                 msg = ""
-                if Hunt.critical():
+                if Hunt.critical(None):
                     msg += "@ 크리티컬!\n"
                     mhp -= player.cridmg()
                 else:
