@@ -133,6 +133,7 @@ class Hunt:
             reward = Hunt.reward(mlv, abs(mlv - player.lv) > 3)
             player.money += reward['money']
             lvup = player.gainExp(reward['exp'])
+            player.lv += lvup
             result.append(f"{monsterName}(을)를 쓰러뜨렸다! {reward['exp']}만큼의 경험치랑 {reward['money']}원을 얻어ㅆ다!")
             up = player.statusDelta(lvup)
             if lvup > 0:
